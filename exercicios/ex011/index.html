@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>aumente e diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Foto grande">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audio no html</p>
+    <audio src="midia/My Blue Heaven - Freedom Trail Studio.mp3" controls></audio>
+
+    <audio>
+        <source src="midia/My Blue Heaven - Freedom Trail Studio.mp3" type="audio/mpeg">
+        <p>caso o audio n de certo <a href="midia/My Blue Heaven - Freedom Trail Studio.mp3">clique aqui para baixar</a></p>
+    </audio>
+</body>
+</html>
