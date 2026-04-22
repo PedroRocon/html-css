@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" autocomplete="">
+        <p>
+            <label for="inum1">Número:</label>
+            <input type="number" name="Número1" id="inum1" required  oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="inum2">Número:</label>
+            <input type="number" name="Número2" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

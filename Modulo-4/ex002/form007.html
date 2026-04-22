@@ -6,6 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="" method="get" autocomplete="">
+        <p>
+            <label for="Est">Estado</label>
+            <select name="estado0" id="Est">
+                <option value="RJ"> Rio de Janeiro</option>
+                <option value="SP"> São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="Prof">Profissão</label>
+            <input type="text" name="Profissão" id="Prof" list="ilist">
+            <datalist id="ilist">
+                <option value="DEV"> Desenvolvedor</option>
+                <option value="FAX"> Faxineiro</option>
+                <option value="PED"> Pedreiro</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg"> Mensagem</label> <br>
+            <textarea name="msg" id="imsg"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
